@@ -19,7 +19,7 @@
 .nav_bar ul li a{
     text-decoration: none;
     color: white;
-    padding: 18px 50px;
+    padding: 18px 114px;
     display: block}
 .nav_bar ul li a:hover{
     background-color: deepskyblue;
@@ -28,7 +28,7 @@
 
 /* Dropdown menu css */
 
-.nav_bar ul li ul{background-color: dodgerblue;position: absolute;left: -99999px;overflow: hidden}
+.nav_bar ul li ul{background-color: dodgerblue;position: absolute;left: -99999px;z-index: 1}
 .nav_bar ul li:hover ul{left: 0}
 .nav_bar ul li ul li{float: none;border-left: none}
 .nav_bar ul li ul li:last-child{border-bottom: none}
@@ -43,7 +43,7 @@
     border: 3px solid dodgerblue;
     margin: 20px 90px;
     float: left;
-     background-color: white;
+    background-color: white;
     overflow: hidden;
    
     
@@ -52,7 +52,11 @@
     width: 220px;    
     padding: 12px 20px;
     opacity: 0.7;
-    transition :1s; 
+    transition :1s;
+   position: absolute;
+    z-index: 0;
+   
+ 
     
    
 }
@@ -62,4 +66,5 @@
     
     
 }
-.image_gallery p{text-align: center;font-family: sans-serif}
+.image_gallery p{text-align: center;font-family: sans-serif;
+margin-top: 245px;font-weight: bold;color: dimgray}
